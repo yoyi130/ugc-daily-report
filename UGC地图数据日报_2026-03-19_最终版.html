@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGC地图数据日报 - 2026-03-19</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #555;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: #666;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+            color: #333;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fbfd;
+        }
+
+        tr:hover {
+            background-color: #f0f3ff;
+        }
+
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        em {
+            color: #7f8c8d;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Courier New", monospace;
+            color: #e74c3c;
+        }
+
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .trend-up {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .trend-down {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .trend-flat {
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UGC地图数据日报</h1>
+<p><strong>日期：2026-03-19</strong></p>
+<hr>
+<h2>📊 数据说明</h2>
+<p><strong>筛选标准</strong>：</p>
+<ul>
+<li>玩法类型：玩法选择合计</li>
+<li>游玩人数：≥ 1000</li>
+</ul>
+<p><strong>对比说明</strong>：</p>
+<ul>
+<li>对比基准：前一交易日（2026-03-18）</li>
+</ul>
+<p><strong>增减阈值</strong>：</p>
+<ul>
+<li>游玩人数：±1000人</li>
+<li>曝光转化率：±0.5%</li>
+<li>人均体验时长：±100秒</li>
+<li>人均对局次数：±0.3次</li>
+</ul>
+<hr>
+<h2>🎯 一、重点地图监控</h2>
+<p><strong>说明</strong>：监控重点关注地图的当日表现，对比前一日数据</p>
+<table>
+<thead>
+<tr>
+<th>地图名称</th>
+<th>游玩人数</th>
+<th>曝光转化率</th>
+<th>人均体验时长(秒)</th>
+<th>人均对局次数</th>
+<th>BI排名</th>
+<th>表现判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>未命名</td>
+<td>16,726 (-741)</td>
+<td>5.44% (-0.08999999999999986)%</td>
+<td>787.80 (-2.4300000000000637)</td>
+<td>1.97 (-0.039999999999999813)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>枪王之王-无限升级</td>
+<td>15,102 (-749)</td>
+<td>2.94% (-0.08999999999999986)%</td>
+<td>739.59 (+7.080000000000041)</td>
+<td>1.74 (+0.010000000000000009)</td>
+<td>1</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>我不是色盲-多模式</td>
+<td>12,951 (+290)</td>
+<td>2.87% (+0.050000000000000266)%</td>
+<td>644.65 (-11.670000000000073)</td>
+<td>1.89 (-0.030000000000000027)</td>
+<td>2</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>逃离海啸-获得萌宠</td>
+<td>8,431 (-303)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>无限吃丹修仙</td>
+<td>7,253 (-220)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>狙击空城—枪战对决</td>
+<td>6,209 (-224)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>生化追击-变异射击</td>
+<td>5,354 (-200)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>搭建生存！</td>
+<td>4,701 (-61)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>未命名</td>
+<td>4,418 (+0)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>跑车逃生+1</td>
+<td>4,129 (-289)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>晋级制擂台赛</td>
+<td>3,602 (+89)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>禁止跳跃大运版</td>
+<td>3,600 (+100)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>挑战！岩浆生存99关</td>
+<td>3,198 (-300)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>攻楼-钢枪之王</td>
+<td>3,156 (-257)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>未命名</td>
+<td>3,014 (-336)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>禁止跳跃</td>
+<td>2,766 (-567)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>攀爬1000米</td>
+<td>2,717 (-546)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>攀爬1000米</td>
+<td>2,717 (-546)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>未命名</td>
+<td>2,680 (-520)</td>
+<td>0.00% (+0)%</td>
+<td>0.00 (+0)</td>
+<td>0.00 (+0)</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+<tr>
+<td>攻楼-钢枪之王</td>
+<td>2,566</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>-</td>
+<td>整体表现稳定</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>🏆 二、综合榜单</h2>
+<p><strong>说明</strong>：综合榜单评分 = 游玩人数(40%) + 曝光转化率(20%) + 人均体验时长(15%) + 人均对局次数(15%) + BI排名(10%)</p>
+<h3>2.1 综合评分榜单 Top 20</h3>
+<p><strong>📈 总结分析</strong>：</p>
+<ul>
+<li><strong>榜单变化</strong>：未命名地图保持第1名，枪王之王-无限升级保持第2名</li>
+<li><strong>新上榜</strong>：未显示（本周期内无明显新上榜地图）</li>
+<li><strong>落榜地图</strong>：未显示（本周期内无明显落榜地图）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>地图名称</th>
+<th>综合评分</th>
+<th>游玩人数</th>
+<th>曝光转化率</th>
+<th>人均体验时长(秒)</th>
+<th>人均对局次数</th>
+<th>BI排名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>未命名</td>
+<td>66.8</td>
+<td>16,726</td>
+<td>5.44%</td>
+<td>787.80</td>
+<td>1.97</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>枪王之王-无限升级</td>
+<td>60.8</td>
+<td>15,102</td>
+<td>2.94%</td>
+<td>739.59</td>
+<td>1.74</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>我不是色盲-多模式</td>
+<td>56.3</td>
+<td>12,951</td>
+<td>2.87%</td>
+<td>644.65</td>
+<td>1.89</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>逃离海啸-获得萌宠</td>
+<td>25.9</td>
+<td>8,431</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>无限吃丹修仙</td>
+<td>23.5</td>
+<td>7,253</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>6</td>
+<td>狙击空城—枪战对决</td>
+<td>21.4</td>
+<td>6,209</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>生化追击-变异射击</td>
+<td>19.7</td>
+<td>5,354</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td>搭建生存！</td>
+<td>18.4</td>
+<td>4,701</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>9</td>
+<td>未命名</td>
+<td>17.8</td>
+<td>4,418</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>10</td>
+<td>跑车逃生+1</td>
+<td>17.3</td>
+<td>4,129</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>11</td>
+<td>晋级制擂台赛</td>
+<td>16.2</td>
+<td>3,602</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>12</td>
+<td>禁止跳跃大运版</td>
+<td>16.2</td>
+<td>3,600</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>13</td>
+<td>挑战！岩浆生存99关</td>
+<td>15.4</td>
+<td>3,198</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>14</td>
+<td>攻楼-钢枪之王</td>
+<td>15.3</td>
+<td>3,156</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>15</td>
+<td>未命名</td>
+<td>15.0</td>
+<td>3,014</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>16</td>
+<td>禁止跳跃</td>
+<td>14.5</td>
+<td>2,766</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>17</td>
+<td>攀爬1000米</td>
+<td>14.4</td>
+<td>2,717</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>18</td>
+<td>攀爬1000米</td>
+<td>14.4</td>
+<td>2,717</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>19</td>
+<td>未命名</td>
+<td>14.4</td>
+<td>2,680</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+<tr>
+<td>20</td>
+<td>攻楼-钢枪之王</td>
+<td>14.1</td>
+<td>2,566</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>📊 三、游玩人数榜单 Top 20</h2>
+<p><strong>📈 总结分析</strong>：</p>
+<ul>
+<li><strong>榜单变化</strong>：未命名地图保持第1名，枪王之王-无限升级保持第2名</li>
+<li><strong>新上榜</strong>：未显示（本周期内无明显新上榜地图）</li>
+<li><strong>落榜地图</strong>：未显示（本周期内无明显落榜地图）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>地图名称</th>
+<th>游玩人数</th>
+<th>曝光转化率</th>
+<th>人均体验时长(秒)</th>
+<th>人均对局次数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>未命名</td>
+<td>16,726</td>
+<td>5.44%</td>
+<td>787.80</td>
+<td>1.97</td>
+</tr>
+<tr>
+<td>2</td>
+<td>枪王之王-无限升级</td>
+<td>15,102</td>
+<td>2.94%</td>
+<td>739.59</td>
+<td>1.74</td>
+</tr>
+<tr>
+<td>3</td>
+<td>我不是色盲-多模式</td>
+<td>12,951</td>
+<td>2.87%</td>
+<td>644.65</td>
+<td>1.89</td>
+</tr>
+<tr>
+<td>4</td>
+<td>逃离海啸-获得萌宠</td>
+<td>8,431</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>无限吃丹修仙</td>
+<td>7,253</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>狙击空城—枪战对决</td>
+<td>6,209</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>生化追击-变异射击</td>
+<td>5,354</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>搭建生存！</td>
+<td>4,701</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>9</td>
+<td>未命名</td>
+<td>4,418</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>10</td>
+<td>跑车逃生+1</td>
+<td>4,129</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>11</td>
+<td>晋级制擂台赛</td>
+<td>3,602</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>12</td>
+<td>禁止跳跃大运版</td>
+<td>3,600</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>挑战！岩浆生存99关</td>
+<td>3,198</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>14</td>
+<td>攻楼-钢枪之王</td>
+<td>3,156</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>未命名</td>
+<td>3,014</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>禁止跳跃</td>
+<td>2,766</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>攀爬1000米</td>
+<td>2,717</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>18</td>
+<td>攀爬1000米</td>
+<td>2,717</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>19</td>
+<td>未命名</td>
+<td>2,680</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>20</td>
+<td>攻楼-钢枪之王</td>
+<td>2,566</td>
+<td>0.00%</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>📊 四、曝光转化率榜单 Top 20</h2>
+<p><strong>📈 总结分析</strong>：</p>
+<ul>
+<li><strong>榜单变化</strong>：未命名地图保持第1名，枪王之王-无限升级保持第2名</li>
+<li><strong>新上榜</strong>：未显示（本周期内无明显新上榜地图）</li>
+<li><strong>落榜地图</strong>：未显示（本周期内无明显落榜地图）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>地图名称</th>
+<th>曝光转化率</th>
+<th>游玩人数</th>
+<th>人均体验时长(秒)</th>
+<th>人均对局次数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>未命名</td>
+<td>5.44%</td>
+<td>16,726</td>
+<td>787.80</td>
+<td>1.97</td>
+</tr>
+<tr>
+<td>2</td>
+<td>枪王之王-无限升级</td>
+<td>2.94%</td>
+<td>15,102</td>
+<td>739.59</td>
+<td>1.74</td>
+</tr>
+<tr>
+<td>3</td>
+<td>我不是色盲-多模式</td>
+<td>2.87%</td>
+<td>12,951</td>
+<td>644.65</td>
+<td>1.89</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>📊 五、人均体验时长榜单 Top 20</h2>
+<p><strong>📈 总结分析</strong>：</p>
+<ul>
+<li><strong>榜单变化</strong>：未命名地图保持第1名，枪王之王-无限升级保持第2名</li>
+<li><strong>新上榜</strong>：未显示（本周期内无明显新上榜地图）</li>
+<li><strong>落榜地图</strong>：未显示（本周期内无明显落榜地图）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>地图名称</th>
+<th>人均体验时长(秒)</th>
+<th>游玩人数</th>
+<th>曝光转化率</th>
+<th>人均对局次数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>未命名</td>
+<td>787.80</td>
+<td>16,726</td>
+<td>5.44%</td>
+<td>1.97</td>
+</tr>
+<tr>
+<td>2</td>
+<td>枪王之王-无限升级</td>
+<td>739.59</td>
+<td>15,102</td>
+<td>2.94%</td>
+<td>1.74</td>
+</tr>
+<tr>
+<td>3</td>
+<td>我不是色盲-多模式</td>
+<td>644.65</td>
+<td>12,951</td>
+<td>2.87%</td>
+<td>1.89</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>📊 六、人均对局次数榜单 Top 20</h2>
+<p><strong>📈 总结分析</strong>：</p>
+<ul>
+<li><strong>榜单变化</strong>：未命名地图保持第1名，枪王之王-无限升级保持第2名</li>
+<li><strong>新上榜</strong>：未显示（本周期内无明显新上榜地图）</li>
+<li><strong>落榜地图</strong>：未显示（本周期内无明显落榜地图）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>地图名称</th>
+<th>人均对局次数</th>
+<th>游玩人数</th>
+<th>曝光转化率</th>
+<th>人均体验时长(秒)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>未命名</td>
+<td>1.97</td>
+<td>16,726</td>
+<td>5.44%</td>
+<td>787.80</td>
+</tr>
+<tr>
+<td>2</td>
+<td>我不是色盲-多模式</td>
+<td>1.89</td>
+<td>12,951</td>
+<td>2.87%</td>
+<td>644.65</td>
+</tr>
+<tr>
+<td>3</td>
+<td>枪王之王-无限升级</td>
+<td>1.74</td>
+<td>15,102</td>
+<td>2.94%</td>
+<td>739.59</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>报告生成时间：2026-03-19</strong><br>
+<strong>数据来源：UGC数据分析平台</strong></p>
+
+        <div class="footer">
+            <p>数据来源：UGC数据分析平台 | 生成时间：2026/3/20 11:33:33</p>
+        </div>
+    </div>
+</body>
+</html>
