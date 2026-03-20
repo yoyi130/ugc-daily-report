@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGC 地图数据日报</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 10px 0 0;
+            opacity: 0.9;
+        }
+        .reports {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .report-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .report-card h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .report-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .report-card a:hover {
+            background: #5568d3;
+        }
+        .report-card .date {
+            color: #666;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 UGC 地图数据日报</h1>
+        <p>每日自动生成的地图数据分析报告</p>
+    </div>
+
+    <div class="reports">
+        <div class="report-card">
+            <h3>2026-03-18 最终版</h3>
+            <div class="date">2026年3月18日</div>
+            <a href="UGC地图数据日报_2026-03-18_最终版.html">查看完整报告 →</a>
+        </div>
+
+        <div class="report-card">
+            <h3>2026-03-18 完整版</h3>
+            <div class="date">2026年3月18日</div>
+            <a href="UGC地图数据日报_2026-03-18_完整版.md">查看 Markdown</a>
+        </div>
+
+        <div class="report-card">
+            <h3>2026-03-17 最终版</h3>
+            <div class="date">2026年3月17日</div>
+            <a href="UGC地图数据日报_2026-03-17_最终版.md">查看 Markdown</a>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; color: #666;">
+        <p>最后更新：2026-03-20 | 自动生成并部署到 GitHub Pages</p>
+    </div>
+</body>
+</html>
